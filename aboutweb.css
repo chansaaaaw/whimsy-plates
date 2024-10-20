@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3f3;
+}
+
+.about-website-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-website-title {
+    text-align: center;
+    font-size: 36px;
+    color: #edb2b2;
+    margin-bottom: 20px;
+}
+
+.about-website-content {
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.about-website-content p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-website-container {
+        padding: 20px;
+    }
+
+    .about-website-title {
+        font-size: 30px;
+    }
+
+    .about-website-content {
+        font-size: 16px;
+    }
+}
+
+
