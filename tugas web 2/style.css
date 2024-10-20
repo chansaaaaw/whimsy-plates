@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background: #fec4c4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: none; /* Sembunyikan daftar navigasi secara default */
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #fff; /* Mengatur warna teks menjadi putih */
+}
+
+.logo {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    background: url(background-website.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fef5c3;
+}
+
+.search-box {
+    max-width: 550px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #edb2b2; /* Tambahkan border di sini */
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+    background: #edb2b2;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*..............Recipe Section....................*/
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px; /* Perbesar ukuran font untuk judul */
+}
+
+h2 {
+    color: #edb2b2;
+}
+
+.recipe-section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+
+.recipe-card {
+    background: #fde9e9;
+    margin: 30px 10px;
+    border-radius: 10px;
+    border: 1px solid #fec4c4;
+    overflow: hidden;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.recipe-card h2 {
+    font-size: 22px;
+    padding: 8px;
+    color: #bb8585;
+}
+
+.recipe-card p {
+    font-size: 16px;
+    padding: 5px;
+    color: #555555;
+}
+
+.recipe-card a {
+    display: block; /* Membuat tautan mengisi seluruh lebar */
+    text-align: center;
+    text-decoration: none;
+    color: #bb8585;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #fec4c4;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* ............Media Query............. */
+@media only screen and (min-width: 768px) {
+    .menu-icon {
+        display: none; /* Sembunyikan ikon menu pada layar lebih lebar */
+    }
+
+    .nav-list {
+        display: block; /* Tampilkan daftar navigasi pada layar lebih lebar */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+}
